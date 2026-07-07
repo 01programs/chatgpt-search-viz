@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatGPT Search Calls — Full Trend Feb–Jul 2026</title>
+<title>ChatGPT Search Calls - Full Trend Feb–Jul 2026</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -52,20 +52,20 @@
 </head>
 <body>
 
-<h1>ChatGPT Search Calls — Full Trend</h1>
+<h1>ChatGPT Search Calls - Full Trend</h1>
 <p class="subtitle">Average network_search_calls per scrape · Feb 7 – Jul 6, 2026 · 1,000 samples/day · Source: olostep-geo-data S3</p>
 
 <div class="kpi-row">
   <div class="kpi"><div class="kpi-label">Feb 2026 avg</div><div class="kpi-value">1.85</div><div class="kpi-sub">searches/request</div></div>
-  <div class="kpi"><div class="kpi-label">Peak — Apr 25</div><div class="kpi-value green">2.04</div><div class="kpi-sub">95% had 2+ searches</div></div>
+  <div class="kpi"><div class="kpi-label">Peak - Apr 25</div><div class="kpi-value green">2.04</div><div class="kpi-sub">95% had 2+ searches</div></div>
   <div class="kpi"><div class="kpi-label">Jul 2026 avg</div><div class="kpi-value red">0.15</div><div class="kpi-sub">searches/request</div></div>
   <div class="kpi"><div class="kpi-label">Change Feb → Jul</div><div class="kpi-value red">−92%</div><div class="kpi-sub">in search intensity</div></div>
 </div>
 
 <div class="events">
-  <div class="ev neutral"><strong>Mar 23 — brief dip (avg 0.91)</strong>Single-day anomaly, recovered next day.</div>
-  <div class="ev warn"><strong>May 24 — cliff event</strong>two_plus share collapsed overnight: 60% → 1%. Single-search dominance begins.</div>
-  <div class="ev danger"><strong>Jun 13 — structural shift</strong>two_plus effectively eliminated (&lt;1%). 89%+ of requests now get exactly 1 search call.</div>
+  <div class="ev neutral"><strong>Mar 23 - brief dip (avg 0.91)</strong>Single-day anomaly, recovered next day.</div>
+  <div class="ev warn"><strong>May 24 - cliff event</strong>two_plus share collapsed overnight: 60% → 1%. Single-search dominance begins.</div>
+  <div class="ev danger"><strong>Jun 13 - structural shift</strong>two_plus effectively eliminated (&lt;1%). 89%+ of requests now get exactly 1 search call.</div>
 </div>
 
 <div class="chart-section">
@@ -76,8 +76,8 @@
 </div>
 
 <div class="chart-section">
-  <div class="chart-title">Search call distribution — share of daily sample (%)</div>
-  <div class="chart-desc">100% stacked — fraction of the 1,000 daily samples with 0, 1, or 2+ search calls.</div>
+  <div class="chart-title">Search call distribution - share of daily sample (%)</div>
+  <div class="chart-desc">100% stacked - fraction of the 1,000 daily samples with 0, 1, or 2+ search calls.</div>
   <canvas id="distChart" height="220"></canvas>
   <div class="legend">
     <span style="color:#58a6ff"><span style="background:#58a6ff"></span>2+ searches</span>
@@ -89,19 +89,19 @@
 <div class="phases">
   <div class="phase-card">
     <div class="phase-range">Feb 7 – May 22, 2026</div>
-    <div class="phase-name">Phase 1 — Multi-search era</div>
+    <div class="phase-name">Phase 1 - Multi-search era</div>
     <div class="phase-stat green">~1.74 avg</div>
     <div class="phase-detail">80–93% of scrapes trigger 2+ search calls. Peak Apr 25 (avg 2.04). Brief dips on Mar 23 and Apr 2–6 recovered within days.</div>
   </div>
   <div class="phase-card">
     <div class="phase-range">May 23 – Jun 12, 2026</div>
-    <div class="phase-name">Phase 2 — Transition</div>
+    <div class="phase-name">Phase 2 - Transition</div>
     <div class="phase-stat yellow">~0.89 avg</div>
     <div class="phase-detail">Overnight May 24: two_plus collapses 60%→1%. Single-search now dominates (58–67%). Partial recovery Jun 3–12 before final shift.</div>
   </div>
   <div class="phase-card">
     <div class="phase-range">Jun 13 – Jul 6, 2026</div>
-    <div class="phase-name">Phase 3 — Near-elimination</div>
+    <div class="phase-name">Phase 3 - Near-elimination</div>
     <div class="phase-stat red">~0.68 avg</div>
     <div class="phase-detail">two_plus &lt;1%. Single-search 70–97%. Jun 26 anomaly: avg 0.025. Jul trending toward 0.15 floor.</div>
   </div>
@@ -319,7 +319,7 @@ function drawStackedBar(canvasId, series) {
   };
 }
 
-// Call directly — script is at end of body so DOM is ready
+// Call directly - script is at end of body so DOM is ready
 // Also cover the case where load fires later (e.g. inside iframes)
 function init() {
   drawLineChart("avgChart", D.map(r=>r[0]), {yMin:0, yMax:2.2});
