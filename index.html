@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatGPT Search Calls - Full Trend Feb–Jul 2026</title>
+<title>ChatGPT Web Search Activity - Feb to Jul 2026</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -52,32 +52,32 @@
 </head>
 <body>
 
-<h1>ChatGPT Search Calls - Full Trend</h1>
-<p class="subtitle">Average network_search_calls per scrape · Feb 7 – Jul 6, 2026 · 1,000 samples/day · Source: olostep-geo-data S3</p>
+<h1>ChatGPT Web Search Activity</h1>
+<p class="subtitle">How many web searches ChatGPT performs per request · Feb 7 – Jul 6, 2026 · 1,000 requests sampled daily</p>
 
 <div class="kpi-row">
-  <div class="kpi"><div class="kpi-label">Feb 2026 avg</div><div class="kpi-value">1.85</div><div class="kpi-sub">searches/request</div></div>
-  <div class="kpi"><div class="kpi-label">Peak - Apr 25</div><div class="kpi-value green">2.04</div><div class="kpi-sub">95% had 2+ searches</div></div>
-  <div class="kpi"><div class="kpi-label">Jul 2026 avg</div><div class="kpi-value red">0.15</div><div class="kpi-sub">searches/request</div></div>
-  <div class="kpi"><div class="kpi-label">Change Feb → Jul</div><div class="kpi-value red">−92%</div><div class="kpi-sub">in search intensity</div></div>
+  <div class="kpi"><div class="kpi-label">Feb 2026 average</div><div class="kpi-value">1.85</div><div class="kpi-sub">web searches per request</div></div>
+  <div class="kpi"><div class="kpi-label">All-time peak (Apr 25)</div><div class="kpi-value green">2.04</div><div class="kpi-sub">95% of requests triggered 2+</div></div>
+  <div class="kpi"><div class="kpi-label">Jul 2026 average</div><div class="kpi-value red">0.15</div><div class="kpi-sub">web searches per request</div></div>
+  <div class="kpi"><div class="kpi-label">Change Feb to Jul</div><div class="kpi-value red">-92%</div><div class="kpi-sub">drop in search activity</div></div>
 </div>
 
 <div class="events">
-  <div class="ev neutral"><strong>Mar 23 - brief dip (avg 0.91)</strong>Single-day anomaly, recovered next day.</div>
-  <div class="ev warn"><strong>May 24 - cliff event</strong>two_plus share collapsed overnight: 60% → 1%. Single-search dominance begins.</div>
-  <div class="ev danger"><strong>Jun 13 - structural shift</strong>two_plus effectively eliminated (&lt;1%). 89%+ of requests now get exactly 1 search call.</div>
+  <div class="ev neutral"><strong>Mar 23 - brief dip</strong>Single-day drop to avg 0.91 searches/request. Recovered fully the next day.</div>
+  <div class="ev warn"><strong>May 24 - cliff event</strong>Overnight, the share of requests using 2+ searches collapsed from 60% to under 2%. ChatGPT shifted to single-search behavior.</div>
+  <div class="ev danger"><strong>Jun 13 - structural change</strong>Multi-search behavior effectively eliminated. Over 89% of requests now trigger exactly one web search, with the rest triggering none.</div>
 </div>
 
 <div class="chart-section">
-  <div class="chart-title">Average search calls per request (daily)</div>
-  <div class="chart-desc">Mean network_search_calls count per sampled scrape (n=1,000/day). Hover for exact values.</div>
+  <div class="chart-title">Average web searches per request (daily)</div>
+  <div class="chart-desc">Mean number of web searches ChatGPT performs per request, measured daily across 1,000 sampled requests. Hover for exact values.</div>
   <canvas id="avgChart" height="260"></canvas>
   <div class="legend"><span style="color:#58a6ff"><span style="background:#58a6ff"></span>Avg search calls / request</span></div>
 </div>
 
 <div class="chart-section">
-  <div class="chart-title">Search call distribution - share of daily sample (%)</div>
-  <div class="chart-desc">100% stacked - fraction of the 1,000 daily samples with 0, 1, or 2+ search calls.</div>
+  <div class="chart-title">Search behavior breakdown (% of daily requests)</div>
+  <div class="chart-desc">Each bar shows the share of requests that triggered no web search, exactly one, or two or more. The dramatic color shift around May 24 marks the structural change.</div>
   <canvas id="distChart" height="220"></canvas>
   <div class="legend">
     <span style="color:#58a6ff"><span style="background:#58a6ff"></span>2+ searches</span>
@@ -89,26 +89,26 @@
 <div class="phases">
   <div class="phase-card">
     <div class="phase-range">Feb 7 – May 22, 2026</div>
-    <div class="phase-name">Phase 1 - Multi-search era</div>
+    <div class="phase-name">Phase 1 - Multi-search behavior</div>
     <div class="phase-stat green">~1.74 avg</div>
-    <div class="phase-detail">80–93% of scrapes trigger 2+ search calls. Peak Apr 25 (avg 2.04). Brief dips on Mar 23 and Apr 2–6 recovered within days.</div>
+    <div class="phase-detail">80–93% of requests trigger 2 or more web searches. ChatGPT actively cross-references sources. Peak activity on Apr 25 (avg 2.04 searches per request). Dips in Mar and early Apr recovered quickly.</div>
   </div>
   <div class="phase-card">
     <div class="phase-range">May 23 – Jun 12, 2026</div>
-    <div class="phase-name">Phase 2 - Transition</div>
+    <div class="phase-name">Phase 2 - Transition period</div>
     <div class="phase-stat yellow">~0.89 avg</div>
-    <div class="phase-detail">Overnight May 24: two_plus collapses 60%→1%. Single-search now dominates (58–67%). Partial recovery Jun 3–12 before final shift.</div>
+    <div class="phase-detail">Multi-search drops overnight on May 24 (60% down to under 2%). Single-search requests now account for 58–67% of traffic. A brief partial rebound in early June precedes the permanent change.</div>
   </div>
   <div class="phase-card">
     <div class="phase-range">Jun 13 – Jul 6, 2026</div>
-    <div class="phase-name">Phase 3 - Near-elimination</div>
+    <div class="phase-name">Phase 3 - Single-search dominance</div>
     <div class="phase-stat red">~0.68 avg</div>
-    <div class="phase-detail">two_plus &lt;1%. Single-search 70–97%. Jun 26 anomaly: avg 0.025. Jul trending toward 0.15 floor.</div>
+    <div class="phase-detail">Multi-search requests drop below 1%. Between 70–97% of requests use exactly one web search. Jun 26 shows a near-zero anomaly (likely a brief outage). July settles around a floor of 0.15.</div>
   </div>
 </div>
 
 <hr>
-<p class="footnote">Methodology: 1,000 random S3 objects sampled/day from <code>parser=@olostep/chatgpt-results/date=YYYY-MM-DD/</code> in <code>olostep-geo-data</code>. Each object's <code>network_search_calls.search_queries</code> array length counted. n=149 days (Jun 17 missing). EC2 t3.medium · boto3 · Generated Jul 7, 2026.</p>
+<p class="footnote">Methodology: 1,000 ChatGPT requests sampled per day between Feb 7 and Jul 6, 2026 (149 days total; Jun 17 excluded). Each request was inspected for the number of web searches ChatGPT triggered. Generated Jul 7, 2026 by Olostep.</p>
 
 <script>
 const D=[
