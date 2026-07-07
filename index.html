@@ -48,12 +48,27 @@
   hr { border:none; border-top:1px solid #21262d; margin:24px 0; }
   .footnote { font-size:11px; color:#4d5566; line-height:1.6; }
   code { font-family:monospace; color:#a5d6ff; }
+  .methodology {
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #9198a1;
+  }
+  .methodology strong { color: #e6edf3; display: block; margin-bottom: 6px; font-size: 13px; }
 </style>
 </head>
 <body>
 
 <h1>ChatGPT Web Search Activity</h1>
-<p class="subtitle">How many web searches ChatGPT performs per request · Feb 7 – Jul 6, 2026 · 1,000 requests sampled daily</p>
+<p class="subtitle">Feb 7 – Jul 6, 2026 · 149 days</p>
+
+<div class="methodology">
+  <strong>How this was measured</strong>
+  Every day, 1,000 real ChatGPT requests were observed and the number of web searches each one triggered was recorded. This report tracks how that behavior changed over five months — from February through early July 2026. Each data point represents one day's average across those 1,000 requests.
+</div>
 
 <div class="kpi-row">
   <div class="kpi"><div class="kpi-label">Feb 2026 average</div><div class="kpi-value">1.85</div><div class="kpi-sub">web searches per request</div></div>
@@ -108,7 +123,7 @@
 </div>
 
 <hr>
-<p class="footnote">Methodology: 1,000 ChatGPT requests sampled per day between Feb 7 and Jul 6, 2026 (149 days total; Jun 17 excluded). Each request was inspected for the number of web searches ChatGPT triggered. Generated Jul 7, 2026 by Olostep.</p>
+<p class="footnote">Jun 17, 2026 excluded from dataset. Generated Jul 7, 2026 by Olostep.</p>
 
 <script>
 const D=[
